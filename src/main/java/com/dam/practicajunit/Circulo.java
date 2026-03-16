@@ -11,7 +11,7 @@ package com.dam.practicajunit;
 public class Circulo {
 
     /**
-     * @param radio El valor del radio del círculo
+     * @param radio El valor del radio del circulo
      */
     private double radio;
 
