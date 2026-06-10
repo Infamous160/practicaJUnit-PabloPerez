@@ -28,3 +28,9 @@ public class CirculoTest {
         double areaEsperada = Math.PI * Math.pow(1.0, 2);
         assertEquals(areaEsperada, c.calcularArea(), 0.0);
     }
+    @Test
+    public void testCalcularPerimetro() {
+        Circulo c = new Circulo(2.0);
+        double perimetroEsperado = 2 * Math.PI * 2.0;
+        assertEquals(perimetroEsperado, c.calcularPerimetro(), 0.01);
+    }
