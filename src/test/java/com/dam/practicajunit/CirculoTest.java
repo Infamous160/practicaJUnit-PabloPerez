@@ -34,3 +34,9 @@ public class CirculoTest {
         double perimetroEsperado = 2 * Math.PI * 2.0;
         assertEquals(perimetroEsperado, c.calcularPerimetro(), 0.01);
     }
+    @Test
+    public void testMostrarRadio() {
+        Circulo c = new Circulo(4.0);
+        c.mostrarRadio();
+        assertEquals(4.0, c.getRadio(), 0.0);
+    }
