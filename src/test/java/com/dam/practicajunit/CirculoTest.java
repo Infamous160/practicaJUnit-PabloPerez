@@ -11,3 +11,14 @@ public class CirculoTest {
         assertEquals(0.0, c.getRadio(), 0.0);
     }
 }
+@Test
+    public void testGetRadio() {
+        Circulo c = new Circulo(5.0);
+        assertEquals(5.0, c.getRadio(), 0.0);
+    }
+    @Test
+    public void testSetRadio() {
+        Circulo c = new Circulo(3.0);
+        c.setRadio(7.5);
+        assertEquals(7.5, c.getRadio(), 0.0);
+    }
