@@ -22,3 +22,9 @@ public class CirculoTest {
         c.setRadio(7.5);
         assertEquals(7.5, c.getRadio(), 0.0);
     }
+    @Test
+    public void testCalcularArea() {
+        Circulo c = new Circulo(1.0);
+        double areaEsperada = Math.PI * Math.pow(1.0, 2);
+        assertEquals(areaEsperada, c.calcularArea(), 0.0);
+    }
