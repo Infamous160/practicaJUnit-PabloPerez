@@ -11,7 +11,7 @@ public class CirculoTest {
         assertEquals(0.0, c.getRadio(), 0.0);
     }
 }
-@Test
+    @Test
     public void testGetRadio() {
         Circulo c = new Circulo(5.0);
         assertEquals(5.0, c.getRadio(), 0.0);
@@ -39,4 +39,10 @@ public class CirculoTest {
         Circulo c = new Circulo(4.0);
         c.mostrarRadio();
         assertEquals(4.0, c.getRadio(), 0.0);
+    }
+    @Test
+    public void testMayorCirculo() {
+        Circulo c1 = new Circulo(5.0);
+        Circulo c2 = new Circulo(3.0);
+        assertEquals(c1, c1.mayorCirculo(c2));
     }

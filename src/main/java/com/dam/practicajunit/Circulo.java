@@ -80,6 +80,13 @@ public class Circulo {
     public static double mostrarRadio(Circulo circulito) {
         return circulito.radio;
     }
+    public Circulo mayorCirculo(Circulo otro) {
+        if (this.getRadio() >= otro.getRadio()) {
+            return this;
+        } else {
+            return otro;
+        }
+    }
 
     
 }
